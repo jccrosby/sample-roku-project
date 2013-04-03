@@ -29,14 +29,11 @@ Sub Setup() As Object
     }
 
     'Static help text:
-    this.help = "Press the right or left arrow buttons on the remote control "
-    this.help = this.help + "to seek forward or back through the video at "
-    this.help = this.help + "approximately one minute intervals.  Press down "
-    this.help = this.help + "to toggle fullscreen."
+    this.help = "[ Press down to toggle fullscreen ]"
 
     'Register available fonts:
     this.fonts.Register("pkg:/fonts/LeagueGothic.otf")
-    this.textcolor = "#bfc9d5"
+    this.textcolor = "#50bfc9d5"
 
     'Setup image canvas:
     this.canvas.SetMessagePort(this.port)
@@ -45,28 +42,31 @@ Sub Setup() As Object
 
     'Resolution-specific settings:
     mode = CreateObject("roDeviceInfo").GetDisplayMode()
-    if mode = "720p"
+    if mode = "720p" then
         this.layout = {
             full:   this.canvas.GetCanvasRect()
             top:    { x:   0, y:   0, w:1280, h: 130 }
-            left:   { x: 249, y: 177, w: 391, h: 291 }
+            left:   { x: 100, y: 200, w: 540, h: 303 }
             right:  { x: 700, y: 177, w: 350, h: 291 }
-            bottom: { x: 249, y: 550, w: 780, h: 300 }
+            bottom: { x: 249, y: 500, w: 780, h: 300 }
         }
         this.background = "pkg:/images/back-hd.jpg"
         this.headerfont = this.fonts.get("League Gothic Regular", 50, 50, false)
-    else
+    else 
         this.layout = {
             full:   this.canvas.GetCanvasRect()
             top:    { x:   0, y:   0, w: 720, h:  80 }
-            left:   { x: 100, y: 100, w: 280, h: 210 }
+            left:   { x: 55, y: 120, w: 420, h: 221 }
             right:  { x: 400, y: 100, w: 220, h: 210 }
-            bottom: { x: 100, y: 380, w: 520, h: 140 }
+            bottom: { x: 100, y: 700, w: 520, h: 140 }
         }
         this.background = "pkg:/images/back-sd.jpg"
         this.headerfont = this.fonts.get("lmroman10 caps", 30, 50, false)
     end if
+    
+    print mode
 
+    
     this.player.SetMessagePort(this.port)
     this.player.SetLoop(true)
     this.player.SetPositionNotificationPeriod(1)
@@ -229,9 +229,9 @@ Sub PaintFramedCanvas()
             })
         end if
         list.Push({
-            Text: "Current position: " + m.position.tostr() + " seconds"
-            TargetRect: m.layout.right
-            TextAttrs: { halign: "left", valign: "top", color: m.textcolor }
+            Text: m.position.tostr() + " s"
+            TargetRect: m.layout.left
+            TextAttrs: { halign: "right", valign: "bottom", color: "#50ffffff",  }
         })
     end if
     m.canvas.SetLayer(1, list)
