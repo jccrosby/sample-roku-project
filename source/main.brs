@@ -35,8 +35,8 @@ Sub Setup() As Object
     this.help = this.help + "to toggle fullscreen."
 
     'Register available fonts:
-    this.fonts.Register("pkg:/fonts/caps.otf")
-    this.textcolor = "#406040"
+    this.fonts.Register("pkg:/fonts/LeagueGothic.otf")
+    this.textcolor = "#bfc9d5"
 
     'Setup image canvas:
     this.canvas.SetMessagePort(this.port)
@@ -51,17 +51,17 @@ Sub Setup() As Object
             top:    { x:   0, y:   0, w:1280, h: 130 }
             left:   { x: 249, y: 177, w: 391, h: 291 }
             right:  { x: 700, y: 177, w: 350, h: 291 }
-            bottom: { x: 249, y: 500, w: 780, h: 300 }
+            bottom: { x: 249, y: 550, w: 780, h: 300 }
         }
         this.background = "pkg:/images/back-hd.jpg"
-        this.headerfont = this.fonts.get("lmroman10 caps", 50, 50, false)
+        this.headerfont = this.fonts.get("League Gothic Regular", 50, 50, false)
     else
         this.layout = {
             full:   this.canvas.GetCanvasRect()
             top:    { x:   0, y:   0, w: 720, h:  80 }
             left:   { x: 100, y: 100, w: 280, h: 210 }
             right:  { x: 400, y: 100, w: 220, h: 210 }
-            bottom: { x: 100, y: 340, w: 520, h: 140 }
+            bottom: { x: 100, y: 380, w: 520, h: 140 }
         }
         this.background = "pkg:/images/back-sd.jpg"
         this.headerfont = this.fonts.get("lmroman10 caps", 30, 50, false)
@@ -72,7 +72,7 @@ Sub Setup() As Object
     this.player.SetPositionNotificationPeriod(1)
     this.player.SetDestinationRect(this.layout.left)
     this.player.SetContentList([{
-        Stream: { url: "http://ec2-184-72-239-149.compute-1.amazonaws.com:1935/demos/smil:bigbuckbunnyiphone.smil/playlist.m3u8" }
+        Stream: { url: "http://dorycdn.alldigital.net/hls-live-clear/_definst_/liveevent/livestream1.m3u8" }
         StreamFormat: "hls"
         SwitchingStrategy: "full-adaptation"
     }])
@@ -185,14 +185,14 @@ Sub SetupFramedCanvas()
             CompositionMode: "Source"
         },
         { 'The title:
-            Text: "Custom Video Player"
+            Text: "Open Sea Cam - 0.0.10"
             TargetRect: m.layout.top
             TextAttrs: { valign: "bottom", font: m.headerfont, color: m.textcolor }
         },
         { 'Help text:
             Text: m.help
-            TargetRect: m.layout.right
-            TextAttrs: { halign: "left", valign: "top", color: m.textcolor }
+            TargetRect: m.layout.bottom
+            TextAttrs: { halign: "center", valign: "top", color: m.textcolor }
         }
     ])
     m.paint()
@@ -230,7 +230,7 @@ Sub PaintFramedCanvas()
         end if
         list.Push({
             Text: "Current position: " + m.position.tostr() + " seconds"
-            TargetRect: m.layout.bottom
+            TargetRect: m.layout.right
             TextAttrs: { halign: "left", valign: "top", color: m.textcolor }
         })
     end if
