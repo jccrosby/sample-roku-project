@@ -26,10 +26,11 @@ Sub Setup() As Object
         setup:     SetupFramedCanvas
         paint:     PaintFramedCanvas
         eventloop: EventLoop
+        timer:  CreateObject("roTimespan")
     }
 
     'Static help text:
-    this.help = "[ Press down to toggle fullscreen ]"
+    this.help = "[ Press up/down to toggle fullscreen ]"
 
     'Register available fonts:
     this.fonts.Register("pkg:/fonts/LeagueGothic.otf")
@@ -39,32 +40,40 @@ Sub Setup() As Object
     this.canvas.SetMessagePort(this.port)
     this.canvas.SetLayer(0, { Color: "#000000" })
     this.canvas.Show()
-
+    
+    device = CreateObject("roDeviceInfo")
     'Resolution-specific settings:
-    mode = CreateObject("roDeviceInfo").GetDisplayMode()
+    mode = device.GetDisplayMode()
+    size = device.GetDisplaySize()
+    
     if mode = "720p" then
         this.layout = {
             full:   this.canvas.GetCanvasRect()
-            top:    { x:   0, y:   0, w:1280, h: 130 }
+            top:    { x:   0, y:   0, w:1075, h: 150 }
             left:   { x: 100, y: 200, w: 540, h: 303 }
             right:  { x: 700, y: 177, w: 350, h: 291 }
-            bottom: { x: 249, y: 500, w: 780, h: 300 }
+            bottom: { x: 249, y: 650, w: 780, h: 300 }
         }
         this.background = "pkg:/images/back-hd.jpg"
         this.headerfont = this.fonts.get("League Gothic Regular", 50, 50, false)
+          print ">> DISPLAY MODE - 720 Executed "
     else 
         this.layout = {
             full:   this.canvas.GetCanvasRect()
-            top:    { x:   0, y:   0, w: 720, h:  80 }
-            left:   { x: 55, y: 120, w: 420, h: 221 }
+            top:    { x:   0, y:   20, w: 640, h:  80 }
+            left:   { x: 65, y: 150, w: 360, h: 180 }
             right:  { x: 400, y: 100, w: 220, h: 210 }
-            bottom: { x: 100, y: 700, w: 520, h: 140 }
+            bottom: { x: 100, y: 400, w: 520, h: 140 }
         }
         this.background = "pkg:/images/back-sd.jpg"
         this.headerfont = this.fonts.get("lmroman10 caps", 30, 50, false)
+          print ">> DISPLAY MODE - Other Executed "
     end if
     
-    print mode
+    print "DISPLAY MODE: " + mode
+    
+    
+   ''print "DISPLAY SIZE: " + size.Lookup("w")
 
     
     this.player.SetMessagePort(this.port)
@@ -104,9 +113,7 @@ Sub EventLoop()
             else if msg.isRemoteKeyPressed()
                 index = msg.GetIndex()
                 print "Remote button pressed: " + index.tostr()
-                if index = 2  '<UP>
-                    return
-                else if index = 3 '<DOWN> (toggle fullscreen)
+                 if index = 2 or index = 3 ''<UP> or <DOWN> (toggle fullscreen)
                     if m.paint = PaintFullscreenCanvas
                         m.setup = SetupFramedCanvas
                         m.paint = PaintFramedCanvas
@@ -185,18 +192,23 @@ Sub SetupFramedCanvas()
             CompositionMode: "Source"
         },
         { 'The title:
-            Text: "Open Sea Cam - 0.0.10"
+            Text: "Open Sea Cam"
             TargetRect: m.layout.top
-            TextAttrs: { valign: "bottom", font: m.headerfont, color: m.textcolor }
-        },
-        { 'Help text:
-            Text: m.help
-            TargetRect: m.layout.bottom
-            TextAttrs: { halign: "center", valign: "top", color: m.textcolor }
-        }
+            TextAttrs: { valign: "bottom", halign:"right", font: m.headerfont, color: m.textcolor }
+        }',
+        '{ 'Help text:
+       '     Text: m.help
+       '     TargetRect: m.layout.bottom
+       '     TextAttrs: { halign: "center", valign: "top", color: m.textcolor }
+       ' }
     ])
     m.paint()
     m.canvas.AllowUpdates(true)
+    
+    
+    m.timer.Mark()
+    
+    
 End Sub
 
 Sub PaintFramedCanvas()
@@ -228,11 +240,23 @@ Sub PaintFramedCanvas()
                 CompositionMode: "Source"
             })
         end if
-        list.Push({
-            Text: m.position.tostr() + " s"
-            TargetRect: m.layout.left
-            TextAttrs: { halign: "right", valign: "bottom", color: "#50ffffff",  }
-        })
+       ' list.Push({
+        '    Text: m.position.tostr() + " s"
+       '     TargetRect: m.layout.left
+       '     TextAttrs: { halign: "right", valign: "bottom", color: "#50ffffff",  }
+       ' })
     end if
+    
+    if m.timer.TotalSeconds() < 10
+       list.Push({ 'Help text:
+            Text: m.help
+            TargetRect: m.layout.bottom
+            TextAttrs: { halign: "center", valign: "top", color: m.textcolor }
+        })
+      else
+      ' m.timer.delete
+        
+    end if
+    
     m.canvas.SetLayer(1, list)
 End Sub
