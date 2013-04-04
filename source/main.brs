@@ -50,7 +50,7 @@ Sub Setup() As Object
         this.layout = {
             full:   this.canvas.GetCanvasRect()
             top:    { x:   0, y:   0, w:1075, h: 150 }
-            left:   { x: 100, y: 200, w: 540, h: 303 }
+            left:   { x: 96, y: 218, w: 540, h: 303 }
             right:  { x: 700, y: 177, w: 350, h: 291 }
             bottom: { x: 249, y: 650, w: 780, h: 300 }
         }
@@ -61,9 +61,9 @@ Sub Setup() As Object
         this.layout = {
             full:   this.canvas.GetCanvasRect()
             top:    { x:   0, y:   20, w: 640, h:  80 }
-            left:   { x: 65, y: 150, w: 360, h: 180 }
+            left:   { x: 60, y: 150, w: 360, h: 180 }
             right:  { x: 400, y: 100, w: 220, h: 210 }
-            bottom: { x: 100, y: 400, w: 520, h: 140 }
+            bottom: { x: 265, y: 400, w: 380, h: 140 }
         }
         this.background = "pkg:/images/back-sd.jpg"
         this.headerfont = this.fonts.get("lmroman10 caps", 30, 50, false)
@@ -251,7 +251,7 @@ Sub PaintFramedCanvas()
        list.Push({ 'Help text:
             Text: m.help
             TargetRect: m.layout.bottom
-            TextAttrs: { halign: "center", valign: "top", color: m.textcolor }
+            TextAttrs: { halign: "right", valign: "top", color: m.textcolor }
         })
       else
       ' m.timer.delete
