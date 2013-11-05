@@ -1,0 +1,519 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"project",
+				"projectName"
+			],
+			[
+				"proj",
+				"projDir"
+			],
+			[
+				"pro",
+				"projDir"
+			],
+			[
+				"fol",
+				"fodlerA"
+			],
+			[
+				"cam",
+				"campaign"
+			],
+			[
+				"camp",
+				"campaigns"
+			],
+			[
+				"dra",
+				"drawerIds"
+			],
+			[
+				"des",
+				"designPaks"
+			],
+			[
+				"vi",
+				"videoObjectIds"
+			],
+			[
+				"sour",
+				"sourceTypes"
+			],
+			[
+				"sourceT",
+				"sourceTypeIds"
+			],
+			[
+				"in",
+				"indicatorIds"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"video_",
+				"video_object_id"
+			],
+			[
+				"pho",
+				"phoneIds"
+			],
+			[
+				"to",
+				"toSave"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"con",
+				"contentList"
+			],
+			[
+				"em",
+				"embedable"
+			],
+			[
+				"_package",
+				"_packageId"
+			],
+			[
+				"ob",
+				"observers"
+			],
+			[
+				"Ana",
+				"AnalyticsSubject"
+			],
+			[
+				"rtmp",
+				"rtmpPath"
+			],
+			[
+				"time",
+				"timeIncrement"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rok",
+				"Roku: Package"
+			],
+			[
+				"ro",
+				"Roku: Package"
+			],
+			[
+				"roku",
+				"Roku: Package"
+			],
+			[
+				"Rok",
+				"Roku: Path"
+			],
+			[
+				"Ro",
+				"Roku: Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"Json",
+				"Set Syntax: JSON"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 141.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jccrosby/Documents/projects/Roku/workspace/sample-roku-proj/sample-roku-proj.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/thirdiris/player/StrobeMediaPlayback-1.swf",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/Users/jccrosby/Library/Application Support/Sublime Text 3/Packages/Roku/roku.py",
+		"/Users/jccrosby/Library/Application Support/Sublime Text 3/Packages/Roku/README.md",
+		"/Users/jccrosby/Library/Application Support/Sublime Text 3/Packages/Roku/Commands/Roku.sublime-commands",
+		"/Users/jccrosby/Library/Application Support/Sublime Text 3/Packages/Roku/TODO.md",
+		"/Users/jccrosby/Documents/projects/DigitalTutors/git/sockets/server.js",
+		"/Users/jccrosby/Documents/projects/DigitalTutors/git/sockets/package.json",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/.gitignore",
+		"/Users/jccrosby/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jccrosby/Desktop/content.plist",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/TemplatesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/VideoObjectsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/PositionsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/PhoneTypesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/PhonesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/PackagesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Phone.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Config/routes.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/VideoObject.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Media.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/SourceTypesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/PagesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/MediasController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/View/SourceTypes/json/options.ctp",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Config/bootstrap.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/DesignPakContentsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/DomainsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/CampaignsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/ClientsController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/AddressTypesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/UsersController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/AddressesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/MediaController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/StatusesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/RolesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/UserTypesController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Address.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/User.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/View/UserTypes/json/options.ctp",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/SourceType.php",
+		"/Users/jccrosby/Documents/projects/Roku/documentation/data/roku-xml-objects.xml",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/AddressType.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/AppModel.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Campaign.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Client.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Control.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/DesignPakContent.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Domain.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Drawer.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Indicator.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Package.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/PhoneType.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Position.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Role.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Status.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/Template.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/View/Templates/json/options.ctp",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Model/UserType.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/Controller/AppController.php",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/View/Domains/json/options.ctp",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/journal.md.txt",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/20130414-journal.md",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/20130413-journal.md",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/20130412-journal.md",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/20130411-journal.md",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/20130418-journal.md",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api-tests/jasmine/spec/ClientsSpec.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api-tests/jasmine/spec/UsersSpec.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api-tests/.gitignore",
+		"/Users/jccrosby/.ssh/id_rsa.pub",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/journal.md",
+		"/Users/jccrosby/.ssh/known_hosts",
+		"/Users/jccrosby/Dropbox/Apps/Calepin/journal.md (John Crosby's conflicted copy 2013-04-06).txt",
+		"/Users/jccrosby/Dropbox/journal/journal.txt",
+		"/Users/jccrosby/Documents/projects/adobe/amazon/aws-ams/s3-connect.sh",
+		"/Applications/XAMPP/xamppfiles/etc/my.cnf",
+		"/Users/jccrosby/Documents/projects/CLVR/git/clvrtv-json-api/app/.htaccess",
+		"/Users/jccrosby/Documents/projects/third-iris/git/StrobeMediaPlayback/.actionScriptProperties",
+		"/Users/jccrosby/Documents/projects/third-iris/svn/trunk/project/strobemediaplayer/StrobeMediaPlayback/.actionScriptProperties",
+		"/Users/jccrosby/Documents/projects/third-iris/git/StrobeMediaPlayback/.gitignore",
+		"/Users/jccrosby/Documents/projects/Williamsville/git/player/index.html",
+		"/Users/jccrosby/Documents/projects/Williamsville/git/player/app.js",
+		"/Volumes/Adobe Media Server 5/applications/livepkgr/events/_definst_/stream123/Manifest.xml",
+		"/Users/jccrosby/Documents/projects/_crsby/segment.io/workspace/segment-io-osmf-plugin/README.md",
+		"/Users/jccrosby/Documents/projects/Roku/workspace/MBARokuPlayer/.gitignore",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/lunchbox.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/player-apis/vimeo.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/index.html",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/player-apis/media-element.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/design_pak/js/design_pak.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/player-apis/youtube.js",
+		"/Users/jccrosby/Documents/projects/third-iris/svn/trunk/project/strobemediaplayer/StrobeMediaPlayback/html-template/index.template.html",
+		"/Users/jccrosby/Desktop/Article edit - thekuroko",
+		"/Applications/XAMPP/xamppfiles/htdocs/webrtc/samples/getusermedia/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/webrtc/samples/getusermedia/main.js",
+		"/Users/jccrosby/Documents/projects/adobe/MonteryBayPlayer/m3u8/liveevent.m3u8",
+		"/Applications/XAMPP/xamppfiles/htdocs/webrtc/samples/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/webrtc/samples/main.js",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-userdir.conf",
+		"/Users/jccrosby/Documents/projects/nbc/git/nbc-player-build/build.properties",
+		"/Users/jccrosby/Documents/projects/nbc/git/nbc-player-build/player/src/PlayerMediator.as",
+		"/Users/jccrosby/Documents/projects/nbc/git/nbc-player-build/build.xml",
+		"/Users/jccrosby/Documents/projects/nbc/git/player/src/PlayerMediator.as",
+		"/Applications/XAMPP/xamppfiles/htdocs/rmaug/20130312/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/rmaug/README.md",
+		"/Users/jccrosby/Documents/projects/CLVR/documents/clvr__fullscreen_research.md",
+		"/Users/jccrosby/Documents/projects/realeyes/hds-bootstrap/BootstrapParser.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/index.cfm",
+		"/Applications/XAMPP/xamppfiles/htdocs/thirdiris/proxy/index.cfm",
+		"/Applications/XAMPP/xamppfiles/htdocs/thirdiris/proxy/postHandler.cfm",
+		"/Applications/XAMPP/xamppfiles/htdocs/thirdiris/proxy/index.php",
+		"/Users/jccrosby/Documents/projects/adobe/amazon/git/mba-kindle-player/README.md",
+		"/Users/jccrosby/Documents/projects/realeyes/noder/git/noder/Node/REVHub/README.md",
+		"/Users/jccrosby/Documents/projects/realeyes/noder/git/noder/Node/REVHub/package.json",
+		"/Users/jccrosby/Documents/projects/realeyes/noder/noder-test/noder/Node/REVHub/package.json",
+		"/Users/jccrosby/Documents/projects/realeyes/noder/noder-test/noder/Node/REVHub/npm-debug.log",
+		"/Users/jccrosby/Documents/projects/realeyes/hds-bootstrap/build.sh",
+		"/Users/jccrosby/Documents/projects/realeyes/noder/noder-test/noder/Node/REVHub/README.txt",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/controllers/media-element.controller.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/design-pak/design-pak-object-2013-03-05.js",
+		"/Users/jccrosby/Documents/projects/CLVR/git/lunchbox/js/app.js",
+		"/private/etc/hosts",
+		"/Users/jccrosby/Documents/projects/resources/as3/as3core/as3corelib/build/build.xml"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"\"",
+			"print ",
+			"addressIds",
+			"domains",
+			"domainIds",
+			"addresses",
+			"user",
+			"clientIds",
+			"addresses",
+			"addressIds",
+			"videoObject",
+			"source_types",
+			"$user",
+			"user",
+			"indicators",
+			"indicatorIds",
+			"users",
+			"userIds",
+			"medias",
+			"mediaIds",
+			"phone_types",
+			"phoneType",
+			"clientIds",
+			"user",
+			"phones",
+			"phoneIds",
+			"user",
+			"phoneIds",
+			"clients",
+			"phoneIds",
+			"addresses",
+			"addressIds",
+			"result",
+			"users",
+			"userIds",
+			"users",
+			"userIds",
+			"clients",
+			"addressIds",
+			"addresses",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"userType",
+			"UserType",
+			"App.package",
+			"App.Package",
+			"App.package",
+			"firstPack",
+			"_lastpackage",
+			"user",
+			":String",
+			":String\n	= ",
+			"\n	",
+			"internal static const ",
+			"this.observers[i]",
+			"trackingListener",
+			"observers",
+			"	\n",
+			"App.analytics.subject",
+			"AnalyticsSubject",
+			"observers",
+			"listeners",
+			"this.listeners",
+			"listener",
+			"togglePlay",
+			"'",
+			"analytics",
+			"ana",
+			"analytics",
+			"_onResize",
+			"initFastMode",
+			"destinationURL",
+			"    \n",
+			"RequestDomain",
+			"viaas",
+			"startTime",
+			"timeIncrement"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sourceType",
+			"SourceType",
+			"package",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rok",
+				"roku.py"
+			],
+			[
+				"usercon",
+				"app/Controller/UsersController.php"
+			],
+			[
+				"lunch",
+				"js/lunchbox.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true
+}

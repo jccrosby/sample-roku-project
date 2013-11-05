@@ -1,0 +1,16 @@
+{
+	"ip": "192.168.1.119",
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/jccrosby/Documents/projects/Roku/workspace/sample-roku-proj"
+		}
+	],
+	"settings": {
+		"monkey": "george"
+	},
+	"build_systems": {
+		
+	}
+}
